@@ -81,8 +81,12 @@ function generatePassword() {
         }
 
         secretPassword.sort(function(){
-            return Math.random() - 0.5
+            return Math.random() - 0.5;
         });
+
+        let options = fullPassword.concat(lowercaseletter, uppercaseletter, numeric, special)
+  
+        let remainingCharacters = characters - secretPassword.length;
     }
 }
 
