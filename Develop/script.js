@@ -52,6 +52,10 @@ function generatePassword() {
         let scArray = specialCharacters.split('');
         special = scArray;
     }
+
+    if(lowercaseletter.length === 0 && uppercaseletter.length === 0 && numeric.length === 0 && special.length === 0){
+        window.alert("You must choose at least one option to generate your password");
+    }
 }
 
 // Add event listener to generate button
