@@ -61,6 +61,12 @@ function generatePassword() {
           let randomLower = lowercaseletter[lowerRandomNumber];
           secretPassword.push(randomLower);
         }
+
+        if(uppercaseletter.length !== 0){
+            const lowerUpperLetter = Math.floor(Math.random() * uppercaseletter.length);
+            let randomUpper = uppercaseletter[lowerUpperLetter];
+            secretPassword.push(randomUpper);
+        }
     }
 }
 
