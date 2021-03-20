@@ -55,6 +55,12 @@ function generatePassword() {
 
     if(lowercaseletter.length === 0 && uppercaseletter.length === 0 && numeric.length === 0 && special.length === 0){
         window.alert("You must choose at least one option to generate your password");
+    } else {
+        if(lowercaseletter.length !== 0){
+          const lowerRandomNumber = Math.floor(Math.random() * lowercaseletter.length);
+          let randomLower = lowercaseletter[lowerRandomNumber];
+          secretPassword.push(randomLower);
+        }
     }
 }
 
