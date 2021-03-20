@@ -18,7 +18,12 @@ function writePassword() {
 }
 
 function generatePassword() {
-
+    const characters = window.prompt("Please choose a number of characters from at least 8 and no more than 128 for you password")
+    if(characters < 8 || characters > 128 || characters == ''){
+        window.alert("Not valid");
+        generatePassword();
+        return
+    }
 }
 
 // Add event listener to generate button
