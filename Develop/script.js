@@ -24,6 +24,13 @@ function generatePassword() {
         generatePassword();
         return
     }
+
+    const lowerCase = window.confirm("Want lowercase?");
+    if(lowerCase){
+        let alphabet = "abcdefghijklmnopqrstuvwxyz";
+        let alpha = alphabet.split('');
+        lowercaseletter = alpha;
+    }
 }
 
 // Add event listener to generate button
