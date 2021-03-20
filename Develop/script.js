@@ -38,6 +38,13 @@ function generatePassword() {
         let upperalphabet = alphabet.split('');
         uppercaseletter = upperalphabet;
     }
+
+    const number = window.confirm("Want numeric?");
+    if(number){
+        let numbers = "1234567890";
+        let numbersArray = numbers.split('');
+        numeric = numbersArray;
+    }
 }
 
 // Add event listener to generate button
