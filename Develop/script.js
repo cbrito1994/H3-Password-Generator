@@ -13,8 +13,14 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
+  passwordText.value = password;
   
+  lowercaseletter = [];
+  uppercaseletter = [];
+  numeric = [];
+  special = [];
+  secretPassword = [];
+  fullPassword = [];
 }
 
 function generatePassword() {
