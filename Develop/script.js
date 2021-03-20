@@ -84,17 +84,18 @@ function generatePassword() {
             return Math.random() - 0.5;
         });
 
-        let options = fullPassword.concat(lowercaseletter, uppercaseletter, numeric, special)
+        let finalPassword = fullPassword.concat(lowercaseletter, uppercaseletter, numeric, special)
   
         let remainingCharacters = characters - secretPassword.length;
 
         for(let i = 0; i < remainingCharacters; i++){
-            let randomNumberRemainingCharacters = Math.floor(Math.random() * options.length);
-            let selectedRemainingCharacters = options[randomNumberRemainingCharacters];
+            let randomNumberRemainingCharacters = Math.floor(Math.random() * finalPassword.length);
+            let selectedRemainingCharacters = finalPassword[randomNumberRemainingCharacters];
             secretPassword.push(selectedRemainingCharacters);
             console.log(secretPassword);
         }
     }
+    return secretPassword.join('');
 }
 
 // Add event listener to generate button
