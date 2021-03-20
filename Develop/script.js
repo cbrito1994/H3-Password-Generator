@@ -79,6 +79,10 @@ function generatePassword() {
             let randomSpecial = special[specialRandomNumber];
             secretPassword.push(randomSpecial);
         }
+
+        secretPassword.sort(function(){
+            return Math.random() - 0.5
+        });
     }
 }
 
