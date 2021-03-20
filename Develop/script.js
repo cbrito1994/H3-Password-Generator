@@ -73,6 +73,12 @@ function generatePassword() {
             let randomNumber = numeric[numericRandomNumber];
             secretPassword.push(randomNumber);
         }
+
+        if(special.length !== 0){
+            const specialRandomNumber = Math.floor(Math.random() * special.length);
+            let randomSpecial = special[specialRandomNumber];
+            secretPassword.push(randomSpecial);
+        }
     }
 }
 
