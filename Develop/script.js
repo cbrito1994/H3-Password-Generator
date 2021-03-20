@@ -31,6 +31,13 @@ function generatePassword() {
         let alpha = alphabet.split('');
         lowercaseletter = alpha;
     }
+
+    const upperCase = window.confirm("Want uppercase?");
+    if(upperCase){
+        let alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+        let upperalphabet = alphabet.split('');
+        uppercaseletter = upperalphabet;
+    }
 }
 
 // Add event listener to generate button
