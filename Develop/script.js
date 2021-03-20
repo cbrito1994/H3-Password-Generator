@@ -87,6 +87,13 @@ function generatePassword() {
         let options = fullPassword.concat(lowercaseletter, uppercaseletter, numeric, special)
   
         let remainingCharacters = characters - secretPassword.length;
+
+        for(let i = 0; i < remainingCharacters; i++){
+            let randomNumberRemainingCharacters = Math.floor(Math.random() * options.length);
+            let selectedRemainingCharacters = options[randomNumberRemainingCharacters];
+            secretPassword.push(selectedRemainingCharacters);
+            console.log(secretPassword);
+        }
     }
 }
 
