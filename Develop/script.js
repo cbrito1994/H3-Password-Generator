@@ -45,6 +45,13 @@ function generatePassword() {
         let numbersArray = numbers.split('');
         numeric = numbersArray;
     }
+
+    const specials = window.confirm("Want special characters?");
+    if(specials){
+        let specialCharacters = "!#$%&/@?¿¡";
+        let scArray = specialCharacters.split('');
+        special = scArray;
+    }
 }
 
 // Add event listener to generate button
