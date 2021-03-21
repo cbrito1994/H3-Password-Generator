@@ -98,7 +98,6 @@ function generatePassword() {
             let randomNumberRemainingCharacters = Math.floor(Math.random() * finalPassword.length);
             let selectedRemainingCharacters = finalPassword[randomNumberRemainingCharacters];
             secretPassword.push(selectedRemainingCharacters);
-            console.log(secretPassword);
         }
     }
     return secretPassword.join('');
